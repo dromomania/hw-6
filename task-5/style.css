@@ -1,0 +1,9 @@
+body {
+  counter-reset: section;
+}
+
+h3::after {
+  counter-increment: section;
+  content: "-" counter(section) "";
+}
+
